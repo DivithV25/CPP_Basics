@@ -38,10 +38,8 @@ public:
 int main()
 {
 
-    cout << endl
-         << "Constructor" << endl;
-    cout << endl
-         << "Inheritence" << endl;
+    cout << endl<< "Constructor" << endl;
+    cout << endl<< "Inheritence" << endl;
     Employee one("Varun", 1, 100000000, 1234);
 
     one.displaydetails();
