@@ -37,8 +37,8 @@ int main()
     {
         cout << "enter the operation to be preformed" << endl;
         cout << "1.push" << endl
-             << "2.push" << endl
-             << "3.display" << endl;
+             << "2.pop" << endl
+             << "3.display" << endl<<"4.exit";
         cin >> ch;
         switch (ch)
         {
