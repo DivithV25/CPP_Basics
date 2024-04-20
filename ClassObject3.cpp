@@ -23,7 +23,7 @@ public:
     }
     void displaypass()
     {
-        cout << "The password is" << this->password << endl;
+        cout << "The password is " << this->password << endl;
     }
 
 private:
