@@ -27,9 +27,9 @@ public:
     }
 
 private:
-    int password; // this key can be accessed on only in this class not in main function
+    int password; // this key can be accessed only in this class not in main 
 };
-int main()
+int main() 
 {
 
     cout << endl
