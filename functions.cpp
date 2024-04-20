@@ -5,6 +5,11 @@ int stack[MAX];
 int top = -1;
 void display()
 {
+    if (top == -1)
+    {
+        cout << "Empty stack";
+        return;
+    }
     int i;
     for (i = top; i != -1; i--)
     {
@@ -15,7 +20,7 @@ void pop()
 {
     if (top == -1)
     {
-        cout << "stack is empty" << endl;
+        cout << "Underflow" << endl;
         return;
     }
     top = top - 1;
@@ -24,7 +29,7 @@ void push(int x)
 {
     if (top == MAX - 1)
     {
-        cout << "overflow" << endl;
+        cout << "Overflow" << endl;
         return;
     }
     top = top + 1;
@@ -38,7 +43,8 @@ int main()
         cout << "enter the operation to be preformed" << endl;
         cout << "1.push" << endl
              << "2.pop" << endl
-             << "3.display" << endl<<"4.exit";
+             << "3.display" << endl
+             << "4.exit";
         cin >> ch;
         switch (ch)
         {
